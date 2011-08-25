@@ -11,6 +11,8 @@ DONE:
 - Check for character limit (80 soft, 120 hard)
 - Check for valid unix line-endings
 - Check for valid variable names
+- Check for valid protected/private variable names
+- Check for verbosity of variable names
 - Check for invalid usage of closing PHP tag
 - Check for invalid usage of perl-style hash comments
 

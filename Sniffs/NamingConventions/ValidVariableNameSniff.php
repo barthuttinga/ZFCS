@@ -152,6 +152,11 @@ class ZFCS_Sniffs_NamingConventions_ValidVariableNameSniff
             $data    = array($varName);
             $phpcsFile->addWarning($warning, $stackPtr, 'MemberVarContainsNumbers', $data);
         }
+        if (strlen($varName) == 1) {
+            $warning = 'Variable "%s" has a terse name but this is discouraged';
+            $data    = array($varName);
+            $phpcsFile->addWarning($warning, $stackPtr, 'StringVarNotVerbose', $data);
+        }
     }
 
     /**
